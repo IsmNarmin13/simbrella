@@ -1,0 +1,15 @@
+{
+  "name": "simbrella",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "sass assets/scss:assets/css",
+    "compile:sass:watch": "sass assets/scss:assets/css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

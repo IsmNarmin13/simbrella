@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 60px;
+}
+#sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+#sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #818181;
+}
+
+#open-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #818181;
+    z-index: 1000;
+}
+
+.svg-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 900px;
+    pointer-events: none;
+    transform: translate(-40%, -150%);
+}
+
+nav {
+    height: 60px;
+}
+
+.carousel-container {
+    margin: 0 auto;
+}
+
+.carousel-img {
+    width: 29%;
+    height: auto;
+}
+
+.glide__slide {
+    display: flex;
+    align-items: center;
+    /* padding: 4rem 4.7vw; */
+    justify-content: space-between;
+    position: relative;
+}
+
+.glide__slides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel-content {
+    width: 70%;
+    padding-right: 100px;
+}
+
+h2 {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+button {
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    color: #bcac76;
+    border-color: #bcac76;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid;
+    padding: 0.525rem 0.75rem;
+    font-size: .8rem;
+    line-height: 1.6;
+    border-radius: 0;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-weight: bold;
+    margin-top: 3em;
+}
+
+.carText {
+    letter-spacing: .3em;
+    font-weight: 400;
+    color: #212529;
+}
+
+.custom-shape {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(60%, -60%);
+    z-index: 1;
+}
+
+.carousel-img {
+    width: 65%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.imagez {
+    display: flex;
+}
+
+.imagez {
+    display: flex;
+    margin-left: 50px;
+    transition: margin-left 3s;
+}
+
+.glide__slide {
+    padding-left: 4rem;
+}
+
+.carousel-img {
+    margin-left: 50px;
+}
+
+/**/
+.dotsContainer {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%); /* Center the dots horizontally */
+}
+
+.dotsContainer .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dotsContainer .active {
+    background-color: #555;
+}
+
+.dotsContainer .active {
+    background-color: #555;
+}
+
+
+
+
+.carousel-content,
+.carousel-img {
+    animation: circularMotion 10s ease-in-out;
+}
+
+.custom-shape {
+    animation: svgScroll 10s ease-in-out 2s;
+}

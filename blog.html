@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Manrope:wght@300;400;500;600;700;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/blog.css" />
+  </head>
+
+  <body>
+    <!-- <header class="flex flex-col">
+        <div class="top-bar w-full h-[55px] flex justify-between items-center px-16">
+            <div class="top-left">
+                <ul id="top-left-Head" class="flex gap-4 justify-center items-center">
+                    <li class="social-Head cursor-pointer"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="social-Head"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="phone-Head">
+                        <i class="fa-solid fa-phone mr-[3px]"></i>
+                        020-800-456-747
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-middle">
+                <p>Free in-store delivery</p>
+            </div>
+            <div class="top-bar-right">
+                <label for="language"></label>
+                <select name="language" id="language">
+                    <option value="az">English</option>
+                    <option value="eng">German</option>
+                    <option value="ru">French</option>
+                </select>
+                <label for="currency-bar"></label>
+                <select name="cur" id="currency-barHead">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GPB</option>
+                </select>
+            </div>
+        </div>
+        <nav class="nav-bar flex justify-between items-center w-full h-[82px] px-16">
+            <div class="flex gap-4">
+                <a class="nav-bar-nameBrand font-bold font-['K2D'] text-lg" href="index.html">Varkala</a>
+                <ul class="flex justify-between gap-6">
+                    <li class="dropdown">
+                        <a class="drop-name font-['K2D'] text-lg">Home
+                            <i class="fa-solid fa-angle-down text-sm"></i>
+                            <div class="home-dropdown-content">
+                                <a class="home-dropdown" href="#">Home1</a>
+                                <a class="home-dropdown" href="#">Home2</a>
+                                <a class="home-dropdown" href="#">Home3</a>
+                                <a class="home-dropdown" href="#">Home4</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="font-['K2D'] text-lg">Shop
+                            <i class="fa-solid fa-angle-down text-sm"></i>
+                        </a>
+                        <div class="home-dropdown-content">
+                            <a class="home-dropdown" href="#">Home1</a>
+                            <a class="home-dropdown" href="#">Home2</a>
+                            <a class="home-dropdown" href="#">Home3</a>
+                            <a class="home-dropdown" href="#">Home4</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="font-['K2D'] text-lg">Icons
+                            <i class="fa-solid fa-angle-down text-sm"></i>
+                        </a>
+                        <div class="home-dropdown-content">
+                            <a class="home-dropdown" href="#">Home1</a>
+                            <a class="home-dropdown" href="#">Home2</a>
+                            <a class="home-dropdown" href="#">Home3</a>
+                            <a class="home-dropdown" href="#">Home4</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="font-['K2D'] text-lg">Pages
+                            <i class="fa-solid fa-angle-down text-sm"></i>
+                        </a>
+                        <div class="home-dropdown-content">
+                            <a class="home-dropdown" href="#">Home1</a>
+                            <a class="home-dropdown" href="#">Home2</a>
+                            <a class="home-dropdown" href="#">Home3</a>
+                            <a class="home-dropdown" href="#">Home4</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="font-['K2D'] text-lg">Docs
+                            <i class="fa-solid fa-angle-down text-sm"></i>
+                        </a>
+                        <div class="home-dropdown-content">
+                            <a class="home-dropdown" href="#">Home1</a>
+                            <a class="home-dropdown" href="#">Home2</a>
+                            <a class="home-dropdown" href="#">Home3</a>
+                            <a class="home-dropdown" href="#">Home4</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="nav-bar-input" class="flex  items-center">
+                <input id="nav-bar-search" class="w-[212px] h-[40px]" type="search" placeholder="Search">
+                <div id="nav-bar-search-icon" class="flex justify-center items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-bar-right">
+                <div class="nav-bar-right-icon flex justify-between gap-6 mt-2">
+                    <div>
+                        <a class="cursor-pointer "><i class="fa-solid fa-user text-2xl overflow-hidden"></i></a>
+                    </div>
+                    <div>
+                        <a class="cursor-pointer ">
+                            <i class="fa-regular fa-heart text-2xl overflow-hidden"></i>
+                            <div class="icon-notification">3</div>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a class="cursor-pointer">
+                            <i class="fa-solid fa-bag-shopping text-2xl overflow-hidden"></i>
+                            <div class="icon-notification-2">5</div>
+                        </a>
+
+                    </div>
+                    <div>
+                        <a class="cursor-pointer text-2xl"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+    <div
+      class="parallaxContainer w-full flex flex-col justify-center items-center"
+    >
+      <div class="parallax-div w-[1110px] h-[432px]">
+        <div
+          class="parallax-image flex flex-col gap-10 justify-center items-center"
+        >
+          <div class="text-Blog flex justify-between items-center gap-4">
+            <a class="text-[#bcac76] font-['K2D']">Home</a>
+            <i class="fa-solid fa-minus text-[#868e96]"></i>
+            <p class="font-[500] text-[white]">Blog</p>
+          </div>
+          <p class="text-7xl font-bold inline-block text-[white] text-['K2D']">
+            BLOG
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mansory-layout mt-[100px] flex justify-center gap-10">
+      <div class="first flex flex-col gap-6">
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              class="w-[306px] h-[204px]"
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#"
+              >Pellentesque habitant morbi</a
+            >
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              class="w-[306px] h-[204px]"
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#">Newest photo apps</a>
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              class="w-[306px] h-[204px]"
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#">Best books about Fashion</a>
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second flex flex-col gap-2">
+        <div data-aos="zoom-in" class="elementSpecial flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/kyle-loftus-596319-unsplash-cropped-2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#">Best books about Fashion</a>
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              src=" https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/rahul-anil-214671-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#"
+              >Best books about Photography</a
+            >
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="element flex flex-col gap-2 pt-4">
+          <div class="cart-head">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#"
+              >Pellentesque habitant morbi</a
+            >
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="third flex flex-col gap-10">
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#">Best books about Fashion</a>
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="elementSpecial flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/averie-woodard-319832-unsplash-cropped.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#"
+              >Autumn fashion tips and tricks</a
+            >
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" class="element flex flex-col gap-2">
+          <div class="cart-head">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="cart-body flex flex-col gap-2">
+            <a class="font-bold text-xl" href="#">Best books and Fashion</a>
+            <div class="flex items-center gap-2">
+              <a class="text-sm text-[#bcac76]" href="#">FASHION AND STYLE </a>
+              <p>January 16, 2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="slide-posts mt-32 flex justify-between items-center w-full px-48 h-[44px] flex">
+        <div>
+            <a class="text-['K2D'] text-[#868e96]" href="#">
+                <i class="fa-solid fa-chevron-left"></i>
+                Older posts
+            </a>
+        </div>
+        <div>
+            <a class="text-['K2D'] text-[#868e96]" href="#">
+                Newer posts
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+    </div> -->
+
+
+    
+    <!-- advantages, email and footer part -->
+    <div class="additionally">
+      <div id="Shipping" class="advantages">
+        <div class="icons">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <div>
+          <h6>Free shipping & return</h6>
+          <p>Free Shipping over 300$</p>
+        </div>
+      </div>
+
+      <div id="Money-back" class="advantages">
+        <div class="icons">
+          <i class="fa-solid fa-coins"></i>
+        </div>
+        <div>
+          <h6>Money back guarantee</h6>
+          <p>30 Days Money Back Guarentee</p>
+        </div>
+      </div>
+
+      <div id="Best-price" class="advantages">
+        <div class="icons">
+          <i class="fa-solid fa-percent"></i>
+        </div>
+        <div>
+          <h6>Best price</h6>
+          <p>Always the best prices</p>
+        </div>
+      </div>
+
+      <div id="Support" class="advantages">
+        <div class="icons">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h6>020-800-456-747</h6>
+          <p>24/7 Available Support</p>
+        </div>
+      </div>
+    </div>
+    <div id="Text-muted">
+      <div id="Be-in-touch-container">
+        <h6>Be in touch</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+          temporibus.
+        </p>
+        <div id="Input">
+          <input type="email" id="" placeholder="Your Email Address" />
+          <a href="#">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="Shop-container" class="bottom-ul">
+        <h6>Shop</h6>
+        <ul>
+          <li><a href="#">For Women</a></li>
+          <li><a href="#">For Men</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="#">Our Blog</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+
+      <div id="Company-container" class="bottom-ul">
+        <h6>Company</h6>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Checkouts</a></li>
+        </ul>
+      </div>
+
+      <div id="Your-account-container" class="bottom-ul">
+        <h6>Your account</h6>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Wishlist</a></li>
+          <li><a href="#">Our Products</a></li>
+          <li><a href="#">Checkouts</a></li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <p>© 2020 Your Company. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy & cookies</a></li>
+        <li><a href="#">Accessibility</a></li>
+        <li><a href="#">Customer Data Promise</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="blog.js"></script>
+</html>

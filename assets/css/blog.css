@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parallax-image {
+  background-image: url("https://demo.bootstrapious.com/varkala/1-2-1/img/photo/chris-murray-YGzEX5yLKeA-unsplash.jpg");
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.masonry-img {
+  width: 400px;
+  padding: 20px;
+}
+.masonry-img img {
+  width: 500px;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.slide-posts a:hover {
+  color: black;
+  transition: 0.2s;
+}
+
+.text-Blog a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.mansory-layout {
+  width: 100%;
+  height: 150vh;
+}
+
+.element {
+  width: 306px;
+  height: 204px;
+  margin-top: 70px;
+}
+
+.elementSpecial {
+  width: 306px;
+  height: 400px;
+  margin-top: 70px;
+}
+.elementSpecial img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.cart-body a:hover {
+  text-decoration: underline;
+}
+
+.additionally {
+  display: flex;
+  padding: 90px 150px;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-top: 200px;
+}
+.additionally .advantages {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px;
+  width: 285px;
+  height: 80px;
+  gap: 7px;
+}
+.additionally .advantages h6 {
+  font-size: 14px;
+  color: #212529;
+  margin: 0 0 4px;
+}
+.additionally .advantages p {
+  font-size: 14px;
+  color: #868e96;
+}
+.additionally .advantages .icons {
+  color: #495057;
+  font-size: 20px;
+  margin: 0 16px;
+}
+
+#Text-muted {
+  display: flex;
+  padding: 96px 200px;
+}
+
+#Text-muted h6 {
+  font-size: 16px;
+  margin: 0 0 24px;
+  color: #212529;
+}
+
+#Text-muted p {
+  font-size: 14px;
+  margin: 0 0 16px;
+  color: #868e96;
+}
+
+#Text-muted a {
+  text-decoration: none;
+  color: #868e96;
+}
+
+#Text-muted ul {
+  list-style: none;
+}
+
+#Text-muted input {
+  padding: 6px 12px 6px 0;
+  border: none;
+  border-bottom: 1px solid #868e96;
+  width: 380px;
+  font-size: 15px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+#Text-muted input:hover {
+  border-bottom: 1px solid #212529;
+}
+
+#Text-muted input::-moz-placeholder {
+  color: #adb5bd;
+}
+
+#Text-muted input::placeholder {
+  color: #adb5bd;
+}
+
+#Text-muted #Be-in-touch-container {
+  width: 475px;
+  height: 205px;
+  padding: 0 96px 0 0;
+}
+
+#Text-muted #Be-in-touch-container #Input {
+  display: flex;
+}
+
+#Text-muted #Be-in-touch-container #Input i {
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-40px, -7px);
+  transition-duration: 0.5s;
+}
+
+#Text-muted #Be-in-touch-container #Input i:hover {
+  color: black;
+}
+
+#Text-muted .bottom-ul {
+  padding: 0 15px;
+  width: 200px;
+}
+
+#Text-muted .bottom-ul a {
+  transition-duration: 0.2s;
+}
+
+#Text-muted .bottom-ul a:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 24px 200px;
+  display: flex;
+  justify-content: space-between;
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+/*# sourceMappingURL=blog.css.map */
