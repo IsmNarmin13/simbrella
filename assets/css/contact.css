@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+}
+
+.parallax-mirror {
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/06/08/44326/aesthetic-flower-17.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-Contact a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.address-Stores {
+  border-bottom: 1px solid rgba(134, 142, 150, 0.337254902);
+}
+
+.contact-Inputs input {
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+}
+
+.contact-InputsEmail input {
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+}
+
+#message {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.getinTouch-icons i:hover {
+  cursor: pointer;
+}
+
+.sendBtn {
+  border: 2px solid #bcac76;
+  color: #bcac76;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sendBtn:hover {
+  color: black;
+  background-color: #bcac76;
+}
+
+.additionally {
+  display: flex;
+  padding: 90px 150px;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-top: 50px;
+}
+.additionally .advantages {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px;
+  width: 285px;
+  height: 80px;
+  gap: 7px;
+}
+.additionally .advantages h6 {
+  font-size: 14px;
+  color: #212529;
+  margin: 0 0 4px;
+}
+.additionally .advantages p {
+  font-size: 14px;
+  color: #868e96;
+}
+.additionally .advantages .icons {
+  color: #495057;
+  font-size: 20px;
+  margin: 0 16px;
+}
+
+#Text-muted {
+  display: flex;
+  padding: 96px 200px;
+}
+
+#Text-muted h6 {
+  font-size: 16px;
+  margin: 0 0 24px;
+  color: #212529;
+}
+
+#Text-muted p {
+  font-size: 14px;
+  margin: 0 0 16px;
+  color: #868e96;
+}
+
+#Text-muted a {
+  text-decoration: none;
+  color: #868e96;
+}
+
+#Text-muted ul {
+  list-style: none;
+}
+
+#Text-muted input {
+  padding: 6px 12px 6px 0;
+  border: none;
+  border-bottom: 1px solid #868e96;
+  width: 380px;
+  font-size: 15px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  outline: none;
+}
+
+#Text-muted input:hover {
+  border-bottom: 1px solid #212529;
+}
+
+#Text-muted input::-moz-placeholder {
+  color: #adb5bd;
+}
+
+#Text-muted input::placeholder {
+  color: #adb5bd;
+}
+
+#Text-muted #Be-in-touch-container {
+  width: 475px;
+  height: 205px;
+  padding: 0 96px 0 0;
+}
+
+#Text-muted #Be-in-touch-container #Input {
+  display: flex;
+}
+
+#Text-muted #Be-in-touch-container #Input i {
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-40px, -7px);
+  transition-duration: 0.5s;
+}
+
+#Text-muted #Be-in-touch-container #Input i:hover {
+  color: black;
+}
+
+#Text-muted .bottom-ul {
+  padding: 0 15px;
+  width: 200px;
+}
+
+#Text-muted .bottom-ul a {
+  transition-duration: 0.2s;
+}
+
+#Text-muted .bottom-ul a:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 24px 200px;
+  display: flex;
+  justify-content: space-between;
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+/*# sourceMappingURL=contact.css.map */

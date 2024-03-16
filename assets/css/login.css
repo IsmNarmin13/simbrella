@@ -1,0 +1,349 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope";
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.login-card {
+  height: 150px;
+  width: 400px;
+  margin-left: 50px;
+}
+
+.new-account-card {
+  width: 400px;
+}
+
+.additionally {
+  display: flex;
+  padding: 90px 150px;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-top: 700px;
+}
+.additionally .advantages {
+  display: flex;
+  align-items: center;
+  padding: 24px 15px;
+  width: 285px;
+  height: 80px;
+  gap: 7px;
+}
+.additionally .advantages h6 {
+  font-size: 14px;
+  color: #212529;
+  margin: 0 0 4px;
+}
+.additionally .advantages p {
+  font-size: 14px;
+  color: #868e96;
+}
+.additionally .advantages .icons {
+  color: #495057;
+  font-size: 20px;
+  margin: 0 16px;
+}
+
+#Text-muted {
+  display: flex;
+  padding: 96px 200px;
+}
+#Text-muted h6 {
+  font-size: 16px;
+  margin: 0 0 24px;
+  color: #212529;
+}
+#Text-muted p {
+  font-size: 14px;
+  margin: 0 0 16px;
+  color: #868e96;
+}
+#Text-muted a {
+  text-decoration: none;
+  color: #868e96;
+}
+#Text-muted ul {
+  list-style: none;
+}
+#Text-muted input {
+  padding: 6px 12px 6px 0;
+  border: none;
+  border-bottom: 1px solid #868e96;
+  width: 380px;
+  font-size: 15px;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  outline: none;
+}
+#Text-muted input:hover {
+  border-bottom: 1px solid #212529;
+}
+#Text-muted input::placeholder {
+  color: #adb5bd;
+}
+#Text-muted #Be-in-touch-container {
+  width: 475px;
+  height: 205px;
+  padding: 0 96px 0 0;
+}
+#Text-muted #Be-in-touch-container #Input {
+  display: flex;
+}
+#Text-muted #Be-in-touch-container #Input i {
+  font-size: 30px;
+  position: absolute;
+  transform: translate(-40px, -7px);
+  transition-duration: 0.5s;
+}
+#Text-muted #Be-in-touch-container #Input i:hover {
+  color: black;
+}
+#Text-muted .bottom-ul {
+  padding: 0 15px;
+  width: 200px;
+}
+#Text-muted .bottom-ul a {
+  transition-duration: 0.2s;
+}
+#Text-muted .bottom-ul a:hover {
+  color: #212529;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 24px 200px;
+  display: flex;
+  justify-content: space-between;
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+@media screen and (max-width: 768px) {
+  .varkala {
+    margin-top: 4px;
+    font-size: 50px;
+  }
+  .dropdown-home,
+  .dropdown-icons,
+  .dropdown-pages,
+  .dropdown-docs {
+    display: none;
+  }
+  .search-container {
+    display: none;
+  }
+  .profile,
+  .like,
+  .bag,
+  .menu {
+    display: none;
+  }
+  .login-card {
+    font-size: 40px;
+    width: 800px;
+    height: 1000px;
+  }
+  .login-card button {
+    height: 130px;
+    margin-top: 80px;
+    font-size: 50px;
+  }
+  .login-card input {
+    height: 100px;
+    font-size: 40px;
+  }
+  .new-account-card {
+    font-size: 40px;
+    margin-top: 200px;
+    margin-left: 50px;
+    width: 800px;
+    height: 1500px;
+  }
+  .new-account-card button {
+    height: 130px;
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  .new-account-card input {
+    height: 100px;
+    font-size: 40px;
+  }
+  .additionally {
+    position: absolute;
+    top: 2100px;
+    display: block;
+    width: 980px;
+    height: 1050px;
+  }
+  .additionally .advantages {
+    position: absolute;
+    left: 10px;
+  }
+  .additionally #Support .icons {
+    position: absolute;
+    font-size: 80px;
+    top: 700px;
+  }
+  .additionally #Support .support-info {
+    position: absolute;
+    left: 150px;
+    width: 340px;
+    top: 715px;
+  }
+  .additionally #Support .support-info h6 {
+    font-size: 40px;
+  }
+  .additionally #Support .support-info p {
+    font-size: 30px;
+  }
+  .additionally #Best-price .icons {
+    position: absolute;
+    font-size: 80px;
+    top: 500px;
+  }
+  .additionally #Best-price .best-price-info {
+    position: absolute;
+    left: 150px;
+    width: 340px;
+    top: 510px;
+  }
+  .additionally #Best-price .best-price-info h6 {
+    font-size: 40px;
+  }
+  .additionally #Best-price .best-price-info p {
+    font-size: 30px;
+  }
+  .additionally #Money-back .icons {
+    position: absolute;
+    font-size: 80px;
+    top: 280px;
+  }
+  .additionally #Money-back .money-back-info {
+    position: absolute;
+    left: 150px;
+    width: 340px;
+    top: 280px;
+  }
+  .additionally #Money-back .money-back-info h6 {
+    font-size: 40px;
+  }
+  .additionally #Money-back .money-back-info p {
+    font-size: 30px;
+  }
+  .additionally #Shipping .icons {
+    position: absolute;
+    font-size: 80px;
+    top: 100px;
+  }
+  .additionally #Shipping .shipping-info {
+    position: absolute;
+    left: 150px;
+    width: 340px;
+    top: 100px;
+  }
+  .additionally #Shipping .shipping-info h6 {
+    font-size: 40px;
+  }
+  .additionally #Shipping .shipping-info p {
+    font-size: 30px;
+  }
+  #Text-muted {
+    position: absolute;
+  }
+  #Be-in-touch-container {
+    position: absolute;
+    top: 3800px;
+    left: 100px;
+  }
+  #Be-in-touch-container h6 {
+    font-size: 50px;
+  }
+  #Be-in-touch-container p {
+    font-size: 30px;
+    width: 700px;
+  }
+  #Be-in-touch-container #Input {
+    width: 800px;
+  }
+  #Be-in-touch-container #Input input {
+    font-size: 40px;
+    width: 800px;
+  }
+  #Text-muted #Be-in-touch-container #Input i {
+    font-size: 80px;
+    left: 750px;
+  }
+  #Text-muted #Shop-container h6 {
+    position: absolute;
+    top: 4100px;
+    left: 50px;
+    font-size: 60px;
+  }
+  #Text-muted #Shop-container ul {
+    position: absolute;
+    top: 4200px;
+    left: 50px;
+    font-size: 40px;
+  }
+  #Text-muted #Company-container h6 {
+    position: absolute;
+    top: 4100px;
+    left: 300px;
+    font-size: 60px;
+  }
+  #Text-muted #Company-container ul {
+    position: absolute;
+    top: 4200px;
+    left: 300px;
+    font-size: 40px;
+  }
+  #Text-muted #Your-account-container h6 {
+    position: absolute;
+    top: 4100px;
+    left: 600px;
+    font-size: 60px;
+  }
+  #Text-muted #Your-account-container ul {
+    position: absolute;
+    top: 4200px;
+    left: 600px;
+    font-size: 40px;
+  }
+  footer p {
+    position: absolute;
+    top: 4800px;
+    font-size: 30px;
+    width: 580px;
+  }
+  footer ul {
+    position: absolute;
+    top: 4880px;
+    font-size: 22px;
+    left: 100px;
+    width: 800px;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */

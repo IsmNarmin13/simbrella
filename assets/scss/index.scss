@@ -358,8 +358,8 @@ button:hover {
 }
 .like {
   position: absolute;
-  right: 150px;
-  top: 25px;
+  right: 145px;
+  top: -5px;
   font-size: x-large;
   cursor: pointer;
   transition: color 0.3s ease;
@@ -389,7 +389,13 @@ button:hover {
 .menu:hover {
   color: $color_gold;
 }
-
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+  position: absolute;
+  top: 27px;
+  right: -12px;
+}
 // caruosel
 
 .svg-background {
@@ -1416,7 +1422,7 @@ footer a {
 }
 #sidebar .close-btn:hover{
   rotate: 90deg;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 #open-btn {
@@ -1428,85 +1434,9 @@ footer a {
 }
 
 
-/////////////////////////////////// 
-.product .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-}
 
-.product .box-container .box{
-  text-align: center;
-  background:white;
-  border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-}
 
-.product .box-container .box .image{
-  height: 35rem;
-  width: 100%;
-  padding: 1.1rem;
-}
 
-.product .box-container .box .image img{
-  height: 100%;
-  width: 100%;
-  border-radius: .5rem;
-  object-fit: cover;
-}
-
-.product .box-container .box .content{
-  padding: 2rem;
-  padding-top: 0;
-}
-
-.product .box-container .box .content h3{
-  color: #1c2137;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.product .box-container .box .content .price{
-  display: inline-block;
-  font-size: 2.5rem;
-  color:  rgb(175, 44, 175);
-}
-
-.product .box-container .box .content .stars{
-  padding: 1rem 0;
-}
-
-.product .box-container .box .content .stars i{
-  font-size: 1.7rem;
-  color: #e9a93a;
-}
-
-.product .box-container .box .content .fa-shopping-cart,
-.product .box-container .box .content .fa-heart,
-.product .box-container .box .content .fa-eye{
-  text-align: center;
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  border-radius: .5rem;
-  background: none;
-  cursor: pointer;
-  font-size: 2rem;
-  color:  rgb(175, 44, 175);
-  border: .1rem solid  rgb(175, 44, 175);
-  margin-left: .5rem;
-}
-
-.product .box-container .box .content .fa-shopping-cart:hover,
-.product .box-container .box .content .fa-heart:hover,
-.product .box-container .box .content .fa-eye:hover{
-  color: white;
-  background:  rgb(175, 44, 175);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
-  transition: .4s linear;
-}
 
 
 

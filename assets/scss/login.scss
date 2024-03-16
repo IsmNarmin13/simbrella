@@ -1,0 +1,390 @@
+$color_gold: #bcac76;
+$color_light_gray: #868e96;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope";
+}
+
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.login-card {
+  height: 150px;
+  width: 400px;
+  margin-left: 50px;
+}
+.new-account-card {
+  width: 400px;
+}
+.additionally {
+  display: flex;
+  padding: 90px 150px;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  margin-top: 700px;
+
+  .advantages {
+    display: flex;
+    align-items: center;
+    padding: 24px 15px;
+    width: 285px;
+    height: 80px;
+    gap: 7px;
+
+    h6 {
+      font-size: 14px;
+      color: #212529;
+      margin: 0 0 4px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #868e96;
+    }
+
+    .icons {
+      color: #495057;
+      font-size: 20px;
+      margin: 0 16px;
+    }
+  }
+}
+
+#Text-muted {
+  display: flex;
+  padding: 96px 200px;
+
+  h6 {
+    font-size: 16px;
+    margin: 0 0 24px;
+    color: #212529;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0 0 16px;
+    color: #868e96;
+  }
+
+  a {
+    text-decoration: none;
+    color: #868e96;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  input {
+    padding: 6px 12px 6px 0;
+    border: none;
+    border-bottom: 1px solid #868e96;
+    width: 380px;
+    font-size: 15px;
+    font-weight: 600;
+    transition-duration: 0.3s;
+    outline: none;
+
+    &:hover {
+      border-bottom: 1px solid #212529;
+    }
+
+    &::placeholder {
+      color: #adb5bd;
+    }
+  }
+
+  #Be-in-touch-container {
+    width: 475px;
+    height: 205px;
+    padding: 0 96px 0 0;
+
+    #Input {
+      display: flex;
+
+      i {
+        font-size: 30px;
+        position: absolute;
+        transform: translate(-40px, -7px);
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .bottom-ul {
+    padding: 0 15px;
+    width: 200px;
+
+    a {
+      transition-duration: 0.2s;
+
+      &:hover {
+        color: #212529;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 24px 200px;
+  display: flex;
+  justify-content: space-between;
+  color: #adb5bd;
+  font-size: 14px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: #adb5bd;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .varkala{
+    margin-top: 4px;
+    font-size: 50px;
+  }
+  .dropdown-home,
+  .dropdown-icons,
+  .dropdown-pages,
+  .dropdown-docs{
+    display: none;
+  }
+  .search-container {
+    display: none;
+  }
+
+  .profile,
+  .like,
+  .bag,
+  .menu {
+    display: none;
+  }
+  
+  
+.login-card {
+	font-size: 40px;
+	width: 800px;
+	height: 1000px;
+	button {
+		height: 130px;
+		margin-top: 80px;
+		font-size: 50px;
+	}
+	input {
+		height: 100px;
+		font-size: 40px;
+	}
+}
+.new-account-card {
+	font-size: 40px;
+	margin-top: 200px;
+	margin-left: 50px;
+	width: 800px;
+	height: 1500px;
+	button {
+		height: 130px;
+		margin-top: 100px;
+		font-size: 50px;
+	}
+	input {
+		height: 100px;
+		font-size: 40px;
+	}
+}
+.additionally {
+	position: absolute;
+	top: 2100px;
+	display: block;
+	width: 980px;
+	height: 1050px;
+	.advantages {
+		position: absolute;
+		left: 10px;
+	}
+	#Support {
+		.icons {
+			position: absolute;
+			font-size: 80px;
+			top: 700px;
+		}
+		.support-info {
+			position: absolute;
+			left: 150px;
+			width: 340px;
+			top: 715px;
+			h6 {
+				font-size: 40px;
+			}
+      p{
+        font-size: 30px;
+      }
+		}
+	}
+  #Best-price {
+		.icons {
+			position: absolute;
+			font-size: 80px;
+			top: 500px;
+		}
+		.best-price-info {
+			position: absolute;
+			left: 150px;
+			width: 340px;
+			top: 510px;
+			h6 {
+				font-size: 40px;
+			}
+      p{
+        font-size: 30px;
+      }
+		}
+	}
+  #Money-back {
+		.icons {
+			position: absolute;
+			font-size: 80px;
+			top: 280px;
+		}
+		.money-back-info {
+			position: absolute;
+			left: 150px;
+			width: 340px;
+			top: 280px;
+			h6 {
+				font-size: 40px;
+			}
+      p{
+        font-size: 30px;
+      }
+		}
+	}
+  #Shipping {
+		.icons {
+			position: absolute;
+			font-size: 80px;
+			top: 100px;
+		}
+		.shipping-info {
+			position: absolute;
+			left: 150px;
+			width: 340px;
+			top: 100px;
+			h6 {
+				font-size: 40px;
+			}
+      p{
+        font-size: 30px;
+      }
+		}
+	}
+}
+
+#Text-muted{
+  position: absolute;
+}
+#Be-in-touch-container{
+  position: absolute;
+  top: 3800px;
+  left: 100px;
+
+  h6{
+    font-size: 50px;
+  }
+  p{
+    font-size: 30px;
+    width: 700px;
+  }
+  #Input{
+    width: 800px;
+    input{
+      font-size: 40px;
+      width: 800px;
+    }
+  }
+}
+#Text-muted #Be-in-touch-container #Input i{
+  font-size: 80px;
+  left: 750px;
+}
+#Text-muted #Shop-container{
+  h6{
+    position: absolute;
+    top: 4100px;
+    left: 50px;
+    font-size: 60px;
+  }
+  ul{
+    position: absolute;
+    top: 4200px;
+    left: 50px;
+    font-size: 40px;
+  }
+}
+#Text-muted #Company-container{
+  h6{
+    position: absolute;
+    top: 4100px;
+    left: 300px;
+    font-size: 60px;
+  }
+  ul{
+    position: absolute;
+    top: 4200px;
+    left: 300px;
+    font-size: 40px;
+  }
+}
+#Text-muted #Your-account-container{
+  h6{
+    position: absolute;
+    top: 4100px;
+    left: 600px;
+    font-size: 60px;
+  }
+  ul{
+    position: absolute;
+    top: 4200px;
+    left: 600px;
+    font-size: 40px;
+  }
+}
+footer{
+  p{
+    position: absolute;
+    top: 4800px;
+    font-size: 30px;
+    width: 580px;
+  }
+  ul{
+    position: absolute;
+    top: 4880px;
+    font-size: 22px;
+    left: 100px;
+    width: 800px;
+  }
+}
+}
+

@@ -10,32 +10,74 @@
 
     <link rel="stylesheet" href="/assets/css/wishlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
 </head>
 
 <body>
-    <div class="like">
-        <a href="/wishlist.html">
-            <i class="fa-regular fa-heart"></i>
-            <small id="basketCount">0</small>
-        </a>
-    </div>
-    <div class="container table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Price (₼‎)</th>
-                    <th>Quantity</th>
-                    <th>Remove</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-        <span id="totalPrice"></span>
-    </div>
+    <nav class="navbar">
+        <div class="left">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-phone">020-800-456-747</i>
+        </div>
+        <div class="middle">
+          Free in-store delivery
+        </div>
+        <div class="right">
+          <a href="#">English</a>
+          <a href="#">USD</a>
+        </div>
+      </nav>
+      <navbar class="navbar2">
+        <div class="navbar-left">
+          <span class="logo">Varkala</span>
+          <a href="#" class="nav-link">Home <i class="fas fa-caret-down"></i></a>
+          <a href="#" class="nav-link">Shop <i class="fas fa-caret-down"></i></a>
+          <a href="#" class="nav-link">Icons <i class="fas fa-caret-down"></i></a>
+          <a href="#" class="nav-link">Pages <i class="fas fa-caret-down"></i></a>
+          <a href="#" class="nav-link">Docs <i class="fas fa-caret-down"></i></a>
+        </div>
+        <div class="navbar-right">
+          <input type="text" placeholder="Search">
+          <i class="fa-solid fa-address-book fontu"></i>
+          <div class="like">
+            <a style="text-decoration: none" href="/wishlist.html">
+                <i class="fa-regular fa-heart fontu"></i>
+                <small id="basketCount" class="dot">0</small>
+            </a>
+        </div>
+        <i class="fa-brands fa-shopify fontu"></i>
+        <i class="fa-solid fa-grip-lines fontu"></i>
+        </div>
+      </navbar>
+   <section>
+    <p>Home - Wishlist</p>
+    <h1>Wishlist</h1>
+    <p>You have <small id="basketCount">3</small> items in your wishlist</p>
+   </section>
+    <section class="info">
+        <div class="container table-responsive">
+            <table class="table">
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="owner">
+            <div class="top">
+                <img class="pp" src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg" alt="">
+                <h3 class="name">Jane Doe</h3>
+                <p class="place">Los Angeles, CA</p>
+            </div>
+            <ul class="myList">
+                <li><i class="fa-solid fa-bag-shopping"></i>Oredrs <span>5</span></li>
+                <li><i class="fa-solid fa-user"></i>Profile</li>
+                <li><i class="fa-solid fa-house"></i>Addresses</li>
+                <li><i class="fa-regular fa-heart"></i>Wishlist</li>
+                <li><i class="fa-solid fa-right-from-bracket"></i>Log out</li>
+            </ul>
+        </div>
+        
+    </section>
+    
     <script src="/wishlist.js"></script>
     <script src="/script.js"></script>
 </body>

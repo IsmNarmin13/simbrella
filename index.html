@@ -1,241 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varkala E-commerce Theme</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        /* Add this style for horizontal navbar */
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
 
-        nav ul li {
-            list-style: none;
-            margin-right: 20px;
-        }
-
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            background-color: #fff; /* You can adjust the background color */
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav ul li ul li {
-            display: block;
-            width: 200px;
-        }
-       
-    </style>
-</head>
-
-<body>
-
+    <title>Main page</title>
+  </head>
+  <body>
     <header>
-
-        <div class="svg-background">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="#F1C21B">
-                <path
-                    d="M42.8,-47C56.9,-39.2,70.7,-27.1,72,-13.6C73.3,-0.1,62.2,14.7,51.6,26.8C41,38.8,31,48.1,19.3,51.8C7.6,55.6,-5.6,53.8,-15.5,47.9C-25.4,42,-31.8,32,-40.7,21.3C-49.5,10.5,-60.7,-1.1,-59.8,-11.2C-58.8,-21.4,-45.6,-30,-33.6,-38.2C-21.6,-46.4,-10.8,-54.1,1.8,-56.2C14.4,-58.4,28.7,-54.9,42.8,-47Z"
-                    transform="translate(100 100)" />
-            </svg>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="">Varkala</a></li>
-                <li>
-                    <a href="">Home <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li><a href="">Home 1 - Fashion</a></li>
-                        <li><a href="">Home 2 - Fashion</a></li>
-                        <li><a href="">Home 3 - Design<span>New</span></a></li>
-                        <li><a href="">Home 4 - Design<span>New</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Shop <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li><a href="">Shop pages</a></li>
-                        <li><a href="">Full width</a></li>
-                        <li><a href="">Full width with category menu</a></li>
-                        <li><a href="">Full width with big products</a></li>
-                        <li><a href="">Fixed width</a></li>
-                        <li><a href="">Fixed width & sidebar</a></li>
-                        <li><a href="">Fixed width & masonry layout <span>New</span></a></li>
-                        <li><a href="">Subcategories</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Product pages <i class="fa-solid fa-angle-down"></i></a>
-                    <ul>
-                        <li><a href="">Product with sticky info</a></li>
-                        <li><a href="">Product with background</a></li>
-                        <li><a href="">Product standard</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
+      <div class="header-top">
+        <div class="container">
+          <div class="left-section">
+            <ul class="header-social-container">
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
             </ul>
-            <div id="sidebar">
-                <div class="close-btn" onclick="closeNav()"><i class="fas fa-times"></i></div>
-                <!-- Add your sidebar content here -->
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+            <a href="#" class="phone-number">
+              <i class="fa-solid fa-phone"></i>020-800-456-747
+            </a>
+          </div>
 
-            <!-- Open Button -->
-            <div id="open-btn" onclick="openNav()"><i class="fas fa-bars"></i></div>
-        </nav>
-    </header>
-    <div class="container-fluid">
-        <div class="carousel-container">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <div class="carousel-content">
-                                <p class="carText">TIME IS ALMOST UP</p>
-                                <h2>Design clocks on sale</h2>
-                                <button>START SHOPPING</button>
-                            </div>
-                            <div class="imagez">
-                                <svg class="custom-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#E8DAFF"
-                                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
-                                        transform="translate(100 100)" />
-                                </svg>
-                                <img class="carousel-img"
-                                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/clock-transparent.png"
-                                    alt="Clock">
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div class="carousel-content">
-                                <p class="carText">OUR ALL-TIME FAVOURITES</p>
-                                <h2>Black & White</h2>
-                                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment.
-                                    His many legs, pit</p>
-                                <button>discover more</button>
-                            </div>
-                            <div class="imagez">
-                                <svg class="custom-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#E8DAFF"
-                                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
-                                        transform="translate(100 100)" />
-                                </svg>
-                                <img class="carousel-img"
-                                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/chair2-transparent.png"
-                                    alt="Chair">
-                            </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div class="carousel-content">
-                                <p class="carText">OUR ALL-TIME FAVOURITES</p>
-                                <h2>Boxxez</h2>
-                                <p>The bedding was hardly able to cover it and seemed to slide off any moment. His many
-                                    legs, pit</p>
-                                <button>DISCOVER MORE</button>
-                            </div>
-                            <div class="imagez">
-                                <svg class="custom-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#E8DAFF"
-                                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
-                                        transform="translate(100 100)" />
-                                </svg>
-                                <img class="carousel-img"
-                                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/box-transparent.png"
-                                    alt="Box">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+          <div class="center-section">
+            <p class="free-in-store">Free in-store delivery</p>
+          </div>
+
+          <div class="right-section">
+            <div class="header-top-actions">
+              <select name="language" style="background: none; border: none">
+                <option value="en">English</option>
+                <option value="gr">German</option>
+                <option value="fr">French</option>
+              </select>
+              <select name="currency" style="background: none; border: none">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+              </select>
             </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="navbar">
+        <div class="varkala">
+          <a href="#">Varkala</a>
+        </div>
+        <div class="dropdown-home">
+          <button class="home-button">
+            Home
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="home-content">
+            <a href="#">Home 1 - Fashion</a>
+            <a href="#">Home 2 - Fashion</a>
+            <a href="#">Home 3 - Design</a>
+            <a href="#">Home 4 - Design</a>
+          </div>
+        </div>
+
+        <div class="dropdown-icons">
+          <button class="icons-button">
+            Icons
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="icons-content">
+            <a href="#">
+              <i class="fa-solid fa-shirt"></i>
+              <p>T-Shirts</p>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-socks"></i>
+              <p>Socks</p>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-clock"></i>
+              <p>Watches</p>
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-hat-cowboy-side"></i>
+              <p>Hats</p>
+            </a>
+          </div>
+        </div>
+        <div class="dropdown-pages">
+          <button class="pages-button">
+            Pages
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="pages-content">
+            <div class="pages-content-img">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+                alt=""
+              />
+              <img
+                src="https://demo.bootstrapious.com/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="pages-content-words">
+              <div class="pages-content-words1">
+                <a href="#">Home 1 - Fashion</a>
+                <a href="#">Home 2 - Fashion</a>
+                <a href="#">Home 3 - Fashion</a>
+                <a href="#">Home 4 - Fashion</a>
+              </div>
+              <div class="pages-content-words2">
+                <a href="#">Home 1 - Fashion</a>
+                <a href="#">Home 2 - Fashion</a>
+                <a href="#">Home 3 - Fashion</a>
+                <a href="#">Home 4 - Fashion</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-docs">
+          <button class="docs-button">
+            Docs
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="docs-content">
+            <a href="#">Introduction</a>
+            <a href="#">Directory structure</a>
+            <a href="#">Gulp</a>
+            <a href="#">Customizing CSS</a>
+            <a href="#">Credits</a>
+          </div>
+        </div>
+
+        <div class="search-container">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="navbar-icons">
+          <div class="profile" id="profileIcon">
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+          </div>
+
+          <div class="like">
+            <a href="wishlist.html">
+              <i class="fa-regular fa-heart"></i>
+              <small id="basketCount">0</small>
+            </a>
+          </div>
+
+          <div class="bag">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <div id="sidebar">
+            <div class="close-btn" onclick="closeNav()">
+              <i class="fas fa-times"></i>
+            </div>
+            <!-- Add your sidebar content here -->
+            <a href="#">Varkala</a>
+            <a href="#">Home</a>
+            <a href="#">Link</a>
+          </div>
+          <div id="open-btn" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel -->
+
+    <div class="carousel">
+      <div class="container-fluid">
+        <div class="carousel-container">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="carousel-content">
+                    <p class="carText">TIME IS ALMOST UP</p>
+                    <h2>Design clocks on sale</h2>
+                    <button>START SHOPPING</button>
+                  </div>
+                  <div class="imagez">
+                    <svg
+                      class="custom-shape"
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#E8DAFF"
+                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                    <img
+                      class="carousel-img"
+                      src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/clock-transparent.png"
+                      alt="Clock"
+                    />
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="carousel-content">
+                    <p class="carText">OUR ALL-TIME FAVOURITES</p>
+                    <h2>Black & White</h2>
+                    <p>
+                      The bedding was hardly able to cover it and seemed ready
+                      to slide off any moment. His many legs, pit
+                    </p>
+                    <button>discover more</button>
+                  </div>
+                  <div class="imagez">
+                    <svg
+                      class="custom-shape"
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#E8DAFF"
+                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                    <img
+                      class="carousel-img"
+                      src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/chair2-transparent.png"
+                      alt="Chair"
+                    />
+                  </div>
+                </li>
+
+                <li class="glide__slide">
+                  <div class="carousel-content">
+                    <p class="carText">OUR ALL-TIME FAVOURITES</p>
+                    <h2>Boxxez</h2>
+                    <p>
+                      The bedding was hardly able to cover it and seemes to
+                      slide off any moment. His many legs, pit
+                    </p>
+                    <button>DISCOVER MORE</button>
+                  </div>
+                  <div class="imagez">
+                    <svg
+                      class="custom-shape"
+                      viewBox="0 0 200 200"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="#E8DAFF"
+                        d="M53.4,-45.2C63.7,-29.6,62.8,-7.7,57.3,11.7C51.7,31.1,41.5,48.1,24.7,59.2C7.9,70.4,-15.5,75.6,-31.4,67.2C-47.2,58.8,-55.5,36.7,-58.8,15.4C-62.1,-5.9,-60.5,-26.4,-49.9,-42.1C-39.2,-57.8,-19.6,-68.6,1,-69.3C21.5,-70.1,43,-60.8,53.4,-45.2Z"
+                        transform="translate(100 100)"
+                      />
+                    </svg>
+                    <img
+                      class="carousel-img"
+                      src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/box-transparent.png"
+                      alt="Box"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="dotsContainer">
-            <div class="dot active" attr='0' onclick="switchImage(this)"></div>
-            <div class="dot" attr='1' onclick="switchImage(this)"></div>
-            <div class="dot" attr='2' onclick="switchImage(this)"></div>
+          <div class="dot active" attr="0" onclick="switchImage(this)"></div>
+          <div class="dot" attr="1" onclick="switchImage(this)"></div>
+          <div class="dot" attr="2" onclick="switchImage(this)"></div>
         </div>
+      </div>
     </div>
-    
 
+    <!-- main section with popular this week porducts -->
+    <section class="main-section">
+      <div class="information">
+        <p class="top-choices">TOP CHOICES</p>
+        <h3 class="popular-this-week">Popular this week</h3>
+        <p class="lorem">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
+          eveniet accusantium! Voluptatum temporibus voluptatem eos porro veniam
+          minima inventore esse odio consectetur numquam earum, deleniti fugiat
+          libero quo error excepturi.
+        </p>
 
+        <div class="products">
+          <div id="Book">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book-sq.jpg"
+              alt=""
+            />
+            <div id="Book-info">
+              <h3>Furniture source book</h3>
+              <p>$39.90</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+
+          <div id="Chair">
+            <div id="Chair-info">
+              <h3>Norwegg design chair</h3>
+              <p>$139.90</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-2-sq.jpg"
+            />
+          </div>
+        </div>
+
+        <div class="products">
+          <div id="Clock">
+            <div id="Clock-info">
+              <h3>Sun Clock</h3>
+              <p>$89.90</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock-sq.jpg"
+            />
+          </div>
+
+          <div id="Acessory-box">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/box-sq.jpg"
+            />
+            <h3>Accessory boxes</h3>
+            <p>$29.90</p>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+
+        <div class="products">
+          <div id="Swiss">
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/clock2-sq.jpg"
+            />
+            <div id="Swiss-info">
+              <h3>Swiss Minutes Black</h3>
+              <p>$149.90</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+          </div>
+
+          <div id="Korona-chair">
+            <div id="Korona-chair-info">
+              <h3>Korona dining room chair</h3>
+              <p>$39.90</p>
+              <a href="#">SHOP NOW</a>
+            </div>
+            <img
+              src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3-3-sq.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- deal of the week part with timer -->
+      <div id="Deal-of-the-week">
+        <div id="Decoration"></div>
+        <div id="Deal-of-the-week-information">
+          <p id="Red-p">DEAL OF THE WEEK</p>
+          <h3>Black and white Nordegg chairs</h3>
+
+          <p id="Price"><span class="old">$129.00</span> <span>$79.90</span></p>
+
+          <p id="Discount">$50 off</p>
+
+          <div id="Countdown">
+            <div class="time">
+              <h6>14</h6>
+              <span>days</span>
+            </div>
+
+            <div class="time">
+              <h6>23</h6>
+              <span>hours</span>
+            </div>
+
+            <div class="time">
+              <h6>59</h6>
+              <span>minutes</span>
+            </div>
+
+            <div class="time">
+              <h6>59</h6>
+              <span>seconds</span>
+            </div>
+          </div>
+
+          <p id="Shop-now"><a href="#">SHOP NOW</a></p>
+        </div>
+
+        <div id="Chair-image">
+          <img
+            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2-transparent.png"
+          />
+        </div>
+      </div>
+
+      <!-- new arrivals with cards of the products -->
+      <div id="New-arrivals">
+        <div id="New-arrivals-container">
+          <h2>New Arrivals</h2>
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found
+            himself transformed in his bed into a horrible vermin. He lay on his
+            armour-like back, and if he lifted his head a little he could see
+            his brown belly, slightly domed and divided by arches into stiff
+            sections
+          </p>
+          <div id="New-arrivals-menu">
+            <ul>
+              <a><li class="active">All products</li></a>
+              <a><li>Chairs</li></a>
+              <a><li>Books</li></a>
+              <a><li>Clothes</li></a>
+              <a><li>Accessories</li></a>
+            </ul>
+            <a href="#">ALL PRODUCTS</a>
+          </div>
+          <div id="productContainer1" class="offers">
+            <div class="items" data-id="1">
+              <div class="product-image">
+                <div id="label1" class="label">Fresh</div>
+                <div class="green-chair">
+                  <img
+                    src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <a href="#" class="fav-a">Add to cart</a>
+                  <div>
+                    <a href="#"
+                      ><i
+                        class="fa-regular fa-heart fav-i cart-button"
+                        data-product-id="productContainer1"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Norwegian Chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="2">
+              <div class="product-image">
+                <div class="book">
+                  <img
+                    src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/book.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Book</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="3">
+              <div class="product-image">
+                <div class="white-chair">
+                  <img
+                    src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair2.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Another Chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="4">
+              <div class="product-image">
+                <div class="red-chair">
+                  <img
+                    src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair3.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Your new chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+                    
+          </div>
+          <div id="productContainer1" class="offers">
+            <div class="items" data-id="5">
+              <div class="product-image">
+                <div id="label1" class="label">Fresh</div>
+                <div class="clock">
+                  <img
+                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/clock.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <a href="#" class="fav-a">Add to cart</a>
+                  <div>
+                    <a href="#"
+                      ><i
+                        class="fa-regular fa-heart fav-i cart-button"
+                        data-product-id="productContainer1"
+                      ></i
+                    ></a>
+                    <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Norwegian Chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="6">
+              <div class="product-image">
+                <div class="yellow-clock">
+                  <img
+                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/clock3.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Book</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="7">
+              <div class="product-image">
+                <div class="yellow-box">
+                  <img
+                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/box.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Another Chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+            <div class="items" data-id="8">
+              <div class="product-image">
+                <div class="gray-box">
+                  <img
+                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/product/box2.jpg"
+                  />
+                </div>
+                <div class="fav">
+                  <div class="fav">
+                    <a href="#" class="fav-a">Add to card</a>
+                    <div>
+                      <a href="#"
+                        ><i
+                          class="fa-regular fa-heart fav-i cart-button"
+                          data-product-id="productContainer2"
+                        ></i
+                      ></a>
+                      <a href="#"><i class="fa-solid fa-maximize fav-i"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h5><a href="#">Your new chair</a></h5>
+                <p class="price">$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- summer sales part -->
+      <div id="Summer-sales">
+        <div id="Summer-sales-info">
+          <h4>Summer Sales</h4>
+          <h5>Our biggest sales this year - up to 60% off!</h5>
+          <a href="#">START SHOPPING</a>
+        </div>
+
+        <div id="Summer-sales-img">
+          <img
+            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/product/chair-transparent.png"
+          />
+        </div>
+      </div>
+
+      <!-- advantages, email and footer part -->
+      <div class="additionally">
+        <div id="Shipping" class="advantages">
+          <div class="icons">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div>
+            <h6>Free shipping & return</h6>
+            <p>Free Shipping over 300$</p>
+          </div>
+        </div>
+
+        <div id="Money-back" class="advantages">
+          <div class="icons">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <div>
+            <h6>Money back guarantee</h6>
+            <p>30 Days Money Back Guarentee</p>
+          </div>
+        </div>
+
+        <div id="Best-price" class="advantages">
+          <div class="icons">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div>
+            <h6>Best price</h6>
+            <p>Always the best prices</p>
+          </div>
+        </div>
+
+        <div id="Support" class="advantages">
+          <div class="icons">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div>
+            <h6>020-800-456-747</h6>
+            <p>24/7 Available Support</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Text-muted">
+        <div id="Be-in-touch-container">
+          <h6>Be in touch</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+            temporibus.
+          </p>
+          <div id="Input">
+            <input type="email" id="" placeholder="Your Email Address" />
+            <a href="#">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="Shop-container" class="bottom-ul">
+          <h6>Shop</h6>
+          <ul>
+            <li><a href="#">For Women</a></li>
+            <li><a href="#">For Men</a></li>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Our Blog</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+
+        <div id="Company-container" class="bottom-ul">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Checkouts</a></li>
+          </ul>
+        </div>
+
+        <div id="Your-account-container" class="bottom-ul">
+          <h6>Your account</h6>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Checkouts</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2020 Your Company. All rights reserved.</p>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy & cookies</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Customer Data Promise</a></li>
+        </ul>
+      </footer>
+    </section>
+
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        function openNav() {
-            document.getElementById("sidebar").style.width = "40%";
+      document.addEventListener("DOMContentLoaded", function () {
+        var glide = new Glide(".glide", {
+          type: "carousel",
+          startAt: 0,
+          autoplay: 5000,
+          rewind: true,
+        }).mount();
+
+        function switchImage(dot) {
+          var index = dot.getAttribute("attr");
+          glide.go({ index });
         }
 
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var glide = new Glide('.glide', {
-                type: 'carousel',
-                startAt: 0,
-                autoplay: 5000,
-                rewind: true,
-            }).mount();
-
-            function switchImage(dot) {
-                var index = dot.getAttribute('attr');
-                glide.go(`=${index}`);
-            }
-
-            var dots = document.querySelectorAll('.dot');
-            dots.forEach(function (dot) {
-                dot.addEventListener('click', function () {
-                    glide.pause();
-                    switchImage(this);
-                });
-            });
-
-            glide.on(['run'], function () {
-                var currentIndex = glide.index;
-                dots.forEach(function (dot, index) {
-                    dot.classList.remove('active');
-                    if (index === currentIndex) {
-                        dot.classList.add('active');
-                    }
-                });
-            });
-
-            glide.on(['swipe.start'], function () {
-                glide.pause();
-            });
-
-            glide.on(['swipe.end'], function () {
-                glide.play();
-            });
+        var dots = document.querySelectorAll(".dot");
+        dots.forEach(function (dot) {
+          dot.addEventListener("click", function () {
+            glide.pause();
+            switchImage(this);
+          });
         });
+
+        glide.on(["run"], function () {
+          var currentIndex = glide.index;
+          dots.forEach(function (dot, index) {
+            dot.classList.remove("active");
+            if (index === currentIndex) {
+              dot.classList.add("active");
+            }
+          });
+        });
+
+        glide.on(["swipe.start"], function () {
+          glide.pause();
+        });
+
+        glide.on(["swipe.end"], function () {
+          glide.play();
+        });
+      });
     </script>
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "40%";
+      }
 
-</body>
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+    <script>
+      
+      
+      let addToCartBtns = document.querySelectorAll(".cart-button");
+      let basketCount = document.getElementById("basketCount");
+      addToCartBtns.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          let id = btn.closest(".items").getAttribute("data-id");
 
+          if (localStorage.getItem("basket") == null) {
+            localStorage.setItem("basket", JSON.stringify([]));
+          }
+          let arr = JSON.parse(localStorage.getItem("basket"));
+          let exisProduct = arr.find((pro) => pro.id == id);
+          if (exisProduct == undefined) {
+            arr.push({
+              id: id,
+              imgUrl: btn
+                .closest(".items")
+                .querySelector("img")
+                .getAttribute("src"),
+              name: btn.closest(".items").querySelector("h5").innerText,
+              price: btn.closest(".items").querySelector(".price").innerText,
+              count: 1,
+            });
+          } else {
+            exisProduct.count++;
+          }
+
+          localStorage.setItem("basket", JSON.stringify(arr));
+          CalcBasketCount();
+        });
+      });
+
+      function CalcBasketCount() {
+        if (localStorage.getItem("basket") != null) {
+          let uniqueItems = new Set();
+          let arr = JSON.parse(localStorage.getItem("basket"));
+
+          arr.forEach((item) => {
+            uniqueItems.add(item.id);
+          });
+
+          let sum = uniqueItems.size;
+
+          basketCount.innerText = sum;
+        }
+      }
+
+      CalcBasketCount();
+    </script>
+  </body>
 </html>
